@@ -31,6 +31,12 @@
             flex-direction: column;
             animation: slideIn 1.5s ease-out;
         }
+        .responsive-video {
+            display: flex;
+            justify-content: center; /* Centers the video horizontally */
+            width: 80%; /* Full width of the container */
+            margin: 0 auto; /* Centers the container itself */
+        }
         .header-content img.logo {
             width: 80px;
             height: auto;
@@ -178,6 +184,7 @@
             margin: 0;
         }
         .video-container {
+            width: 100%;
             text-align: center;
             margin-top: 20px;
             padding: 0 10px;
@@ -250,7 +257,7 @@
 
     <section class="section">
         <h2>Explore Bihar's Cultural Heritage</h2>
-        <div class="video-container">
+        <div class="responsive-video">
             <video controls>
                 <source src="Video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -263,7 +270,7 @@
         <div class="info-card">
             <h3>Folk Music</h3>
             <p>Bihar's folk music, including Bhojpuri, Maithili, and Magadhi songs, captures the essence of its rural life and cultural heritage.</p>
-            <video controls>
+            <video controls class="responsive-video">
                 <source src="Video1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
